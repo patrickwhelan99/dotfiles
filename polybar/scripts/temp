@@ -1,0 +1,5 @@
+if [ -f /sys/devices/platform/nct6775.2592/hwmon/hwmon3/temp2_input ]; then
+	sed -i 's#hwmon-path = /sys/devices/platform/nct6775.2592/hwmon/hwmon2/temp2_input#hwmon-path = /sys/devices/platform/nct6775.2592/hwmon/hwmon3/temp2_input#g' ~/.config/polybar/modules.ini
+elif [ -f /sys/devices/platform/nct6775.2592/hwmon/hwmon2/temp2_input ]; then
+	sed -i 's#hwmon-path = /sys/devices/platform/nct6775.2592/hwmon/hwmon3/temp2_input#hwmon-path = /sys/devices/platform/nct6775.2592/hwmon/hwmon2/temp2_input#g' ~/.config/polybar/modules.ini
+fi
