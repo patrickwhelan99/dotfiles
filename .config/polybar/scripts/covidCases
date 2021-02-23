@@ -1,0 +1,19 @@
+#!/bin/bash
+
+todayCases=$(curl -sL covid19.trackercli.com/plain/uk | grep "Today Cases     |" | cut -d "|" -f 2)
+
+todayCasesNum=${todayCases//,} # Strip the comma from the number string
+
+if [ -z $todayCasesNum ]; then
+	exit -1
+fi
+
+if ! [ $todayCasesNum -eq 0 ]; then
+	echo -e " $todayCases"
+	exit
+else
+	totalCases=$(curl -sL covid19.trackercli.com/plain/uk | grep "Cases           |" | cut -d "|" -f 2)
+	echo -e " $totalCases"
+fi
+
+

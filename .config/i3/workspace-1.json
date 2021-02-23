@@ -1,0 +1,117 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1856,
+       "width": 1506,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "Arch Linux - perl-anyevent-i3 0.17-6 (any) - Mozilla Firefox",
+    "percent": 0.49,
+    "swallows": [
+       {
+        "class": "^Firefox$",
+        "instance": "^Navigator$",
+        //"title": "^Restore Session - Mozilla Firefox$",
+        "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": 0.51,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 819,
+               "width": 1374,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "paz@pazdora:~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "instance": "^gnome\\-terminal\\-server$"
+//                "title": "^paz@pazdora:~$",
+//                "window_role": "^gnome\\-terminal\\-window*$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // splith split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "marks": [],
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 913,
+                       "width": 1064,
+                       "x": 1666,
+                       "y": 1095
+                    },
+                    "marks": [],
+                    "name": "(Paused) Unknown Song - Unknown Artist",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Google\\ Play\\ Music\\ Desktop\\ Player$",
+                        "instance": "^google\\ play\\ music\\ desktop\\ player$",
+                        // "title": "^\\(Paused\\)\\ Unknown\\ Song\\ \\-\\ Unknown\\ Artist$",
+                        "window_role": "^browser\\-window$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 913,
+                       "width": 950,
+                       "x": 2760,
+                       "y": 1095
+                    },
+                    "marks": [],
+                    "name": "Skype [33]",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Skype$"
+                        //"instance": "^skype$",
+                        //"title": "^Skype\\ \\[33\\]$",
+                        //"window_role": "^browser\\-window$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+

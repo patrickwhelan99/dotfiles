@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "$(bluetoothctl info | head -n 1)" == "Device 08:DF:1F:CF:D6:B1 (public)" ]; then
+	bluetoothctl disconnect 08:DF:1F:CF:D6:B1
+	exit 0
+fi
+
+if [ "$(bluetoothctl connect 08:DF:1F:CF:D6:B1)" == "Connection successful" ]; then
+	echo "BT_SUCCESS"
+	exit 0
+else
+	echo "BT_FAIL"
+	exit -1
+fi
+

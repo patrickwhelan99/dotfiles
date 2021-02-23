@@ -1,0 +1,17 @@
+#!/bin/bash
+
+PRICE=$(curl -sX GET "https://api.coingecko.com/api/v3/coins/monero" -H  "accept: application/json" | jq .market_data.current_price.gbp)
+PRICEUSD=$(curl -sX GET "https://api.coingecko.com/api/v3/coins/monero" -H  "accept: application/json" | jq .market_data.current_price.usd)
+PRICECHANGE=$(curl -sX GET "https://api.coingecko.com/api/v3/coins/monero" -H  "accept: application/json" | jq .market_data.price_change_percentage_24h)
+
+PRICECHANGE=$(printf '%0.2f\n' $PRICECHANGE)
+
+if [ ${PRICECHANGE:0:2} == '-0' ] || [ ${PRICECHANGE:0:1} == '0' ]; then
+	PRICECHANGE=$(echo " $PRICECHANGE")
+elif [ ${PRICECHANGE:0:1} == '-' ]; then
+	PRICECHANGE=$(echo " $PRICECHANGE")
+else
+	PRICECHANGE=$(echo " $PRICECHANGE")
+fi
+
+echo -e "XMR: £$PRICE | \$$PRICEUSD | $PRICECHANGE%"
