@@ -1,6 +1,6 @@
 # My desktop files for easy migration
 
-<img src="https://raw.githubusercontent.com/patrickwhelan99/dotfiles/media/example.png" width="100%" height="100%" />
+<img src="https://github.com/patrickwhelan99/dotfiles/raw/main/media/example.png" width="100%" height="100%" />
 
 
 
