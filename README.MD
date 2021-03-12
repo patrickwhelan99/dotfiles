@@ -1,5 +1,8 @@
 # My desktop files for easy migration
 
+<img src="https://raw.githubusercontent.com/patrickwhelan99/dotfiles/media/example.png" width="100%" height="100%" />
+
+
 
 <p align='center'>
   <img src="https://img.shields.io/static/v1?label=Maintained&message=Yes&color=success"/>
