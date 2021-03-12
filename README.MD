@@ -25,11 +25,16 @@ sudo dnf install -y i3 polybar rofi picom jq
 ```
 Note that regular i3 can be used instead if i3-gaps if "gaps inner" and "gaps outer" are commented out from .config/i3/config. Equally gnome-terminal can be swapped out for something else
 
+## Copying the config files
+```bash
+cp -R {wallpapers,.config,.local} ~/
+```
+
 ## Useful things for a fresh fedora install
 ```bash
 sudo dnf update -y
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda git gnome-terminal steam blender discord
+sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda git gnome-terminal steam blender discord nnn
 
 
 wget https://go.skype.com/skypeforlinux-64.rpm && rpm -i skypeforlinux-64.rpm
