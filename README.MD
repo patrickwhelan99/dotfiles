@@ -40,7 +40,7 @@ sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda git gnome-terminal ste
 wget https://go.skype.com/skypeforlinux-64.rpm && rpm -i skypeforlinux-64.rpm
 
 
-wget https://github.com/ytmdesktop/ytmdesktop/releases/download/v1.13.0/YouTube-Music-Desktop-App-1.13.0.AppImage && sudo mv YouTube-Music-Desktop-App-1.13.0.AppImage /usr/local/bin/ytmdesktop
+wget https://github.com/ytmdesktop/ytmdesktop/releases/download/v1.13.0/YouTube-Music-Desktop-App-1.13.0.AppImage && chmod 755 YouTube-Music-Desktop-App-1.13.0.AppImage && sudo mv YouTube-Music-Desktop-App-1.13.0.AppImage /usr/local/bin/ytmdesktop
 
 ```
 

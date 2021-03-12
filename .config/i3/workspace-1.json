@@ -79,10 +79,10 @@
                     "percent": 0.5,
                     "swallows": [
                        {
-                        "class": "^Google\\ Play\\ Music\\ Desktop\\ Player$",
-                        "instance": "^google\\ play\\ music\\ desktop\\ player$",
-                        // "title": "^\\(Paused\\)\\ Unknown\\ Song\\ \\-\\ Unknown\\ Artist$",
-                        "window_role": "^browser\\-window$"
+				"class": "^youtube\\-music\\-desktop\\-app$",
+				"instance": "^youtube\\-music\\-desktop\\-app$",
+				// "title": "^Anemone\\ \\-\\ The\\ Brian\\ Jonestown\\ Massacre$",
+				"window_role": "^browser\\-window$"
                        }
                     ],
                     "type": "con"
